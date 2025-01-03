@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "librush",
+  "version": "${version}",
+  "name": "librush",
+  "description": "A library mod that expands what is possible in Minecraft related to brushes and archeology.",
+  "authors": [
+    "Soky"
+  ],
+  "contact": {
+    "homepage": "https://github.com/SokyranTheDragon/librush",
+    "sources": "https://github.com/SokyranTheDragon/librush",
+    "issues ": "https://github.com/SokyranTheDragon/librush/issues"
+  },
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/librush/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.sokyranthedragon.librush.fabric.LibrushModFabric"
+    ],
+    "client": [
+      "com.github.sokyranthedragon.librush.fabric.client.LibrushModFabricClient"
+    ],
+    "fabric-datagen": [
+      "com.github.sokyranthedragon.librush.datagen.fabric.LibrushDatagen"
+    ]
+  },
+  "mixins": [
+    "librush.mixins.json",
+    "librush.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+  },
+  "conflicts": {
+    "armadillobrushfix": "*"
+  }
+}

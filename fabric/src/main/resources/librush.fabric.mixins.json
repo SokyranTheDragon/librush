@@ -1,0 +1,15 @@
+{
+    "required": true,
+    "package": "com.github.sokyranthedragon.librush.mixin.fabric",
+    "compatibilityLevel": "JAVA_21",
+    "minVersion": "0.8",
+    "client": [
+    ],
+    "mixins": [
+        "MixinArmadillo",
+        "MixinPlayer"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

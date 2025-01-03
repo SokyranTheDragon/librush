@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/SokyranTheDragon/librush/issues"
+license = "GPL-3.0-or-later"
+
+[[mods]]
+modId = "librush"
+version = "${version}"
+displayName = "librush"
+authors = "Soky"
+description = '''
+A library mod that expands what is possible in Minecraft related to brushes and archeology.
+'''
+logoFile = "assets/librush/icon.png"
+
+[[dependencies.librush]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.librush]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+#[[dependencies.librush]]
+#modId = "architectury"
+#type = "required"
+#versionRange = "[15.0.1,)"
+#ordering = "AFTER"
+#side = "BOTH"
+
+[[mixins]]
+config = "librush.mixins.json"

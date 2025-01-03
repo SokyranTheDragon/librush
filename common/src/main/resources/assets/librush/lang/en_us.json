@@ -1,0 +1,5 @@
+{
+  "attribute.name.librush.brush_sweep_duration": "Brush sweep duration",
+  "config.librush.base_brush_sweep_duration": "Base brush sweep duration",
+  "config.librush.base_brush_sweep_duration.tooltip": "Duration of a single brush sweep, in ticks."
+}
