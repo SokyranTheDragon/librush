@@ -12,6 +12,8 @@ description = '''
 A library mod that expands what is possible in Minecraft related to brushes and archeology.
 '''
 logoFile = "assets/librush/icon.png"
+updateJSONURL = "https://raw.githubusercontent.com/SokyranTheDragon/librush/refs/heads/update_checker/neoforge_update.json"
+displayURL = "https://github.com/SokyranTheDragon/librush"
 
 [[dependencies.librush]]
 modId = "neoforge"
