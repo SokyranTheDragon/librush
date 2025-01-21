@@ -14,9 +14,9 @@ public final class LibrushAttributes
 
     // /give @s brush[attribute_modifiers=[{type:"librush:brush_sweep_duration", amount:1.0, operation:"add_value", id:"example:custom_damage", slot:"hand"}]]
     public static final Holder<Attribute> BRUSH_SWEEP_DURATION = register("brush_sweep_duration",
-            new RangedAttribute("attribute.name.librush.brush_sweep_duration", 0, -1024, 1024)
-                    .setSentiment(Attribute.Sentiment.NEGATIVE)
-                    .setSyncable(true));
+        new RangedAttribute("attribute.name.librush.brush_sweep_duration", 0, -1024, 1024)
+            .setSentiment(Attribute.Sentiment.NEGATIVE)
+            .setSyncable(true));
 
     @ExpectPlatform
     private static Holder<Attribute> register(String id, Attribute attribute)
