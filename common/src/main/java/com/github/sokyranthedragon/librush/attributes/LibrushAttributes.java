@@ -18,6 +18,11 @@ public final class LibrushAttributes
             .setSentiment(Attribute.Sentiment.NEGATIVE)
             .setSyncable(true));
 
+    public static final Holder<Attribute> BRUSH_SWEEPS_TO_FINISH = register("brush_sweeps_to_finish",
+        new RangedAttribute("attribute.name.librush.brush_sweeps_to_finish", 0, -1024, 1024)
+            .setSentiment(Attribute.Sentiment.NEGATIVE)
+            .setSyncable(true));
+
     @ExpectPlatform
     private static Holder<Attribute> register(String id, Attribute attribute)
     {

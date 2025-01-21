@@ -21,8 +21,15 @@ class LibrushLanguageGenerator extends FabricLanguageProvider
     public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder translationBuilder)
     {
         translationBuilder.add(LibrushAttributes.BRUSH_SWEEP_DURATION, "Brush sweep duration");
+        translationBuilder.add(LibrushAttributes.BRUSH_SWEEPS_TO_FINISH, "Brush sweeps to finish sweeping");
 
         addConfig(translationBuilder, LibrushConfigConstants.BASE_BRUSH_SWEEP_DURATION_KEY, "Base brush sweep duration", LibrushConfigConstants.BASE_BRUSH_SWEEP_DURATION_TOOLTIP);
+        addConfig(translationBuilder, LibrushConfigConstants.BASE_BRUSH_SWEEPS_TO_FINISH_KEY, "Base sweeps to finish sweeping");
+    }
+
+    private void addConfig(@NotNull TranslationBuilder builder, @NotNull String key, @NotNull String value)
+    {
+        addConfig(builder, key, value, null);
     }
 
     private void addConfig(@NotNull TranslationBuilder builder, @NotNull String key, @NotNull String value, String tooltip)

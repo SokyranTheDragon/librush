@@ -30,5 +30,11 @@ public abstract class MixinBrushableBlockEntity
         // 40 ticks with vanilla brushing duration.
         return Math.max((long)(LibrushConfig.getDefaultBrushSweepDuration() + 30 + AttributeUtils.getValueOrDefault(player, LibrushAttributes.BRUSH_SWEEP_DURATION)), 30L);
     }
+
+    @ModifyConstant(method = "brush", constant = @Constant(intValue = 10))
+    private int modifyRequiredBrushCount(int value, @Local(argsOnly = true) Player player)
+    {
+        // The game by default requires 10 brushes to "break" the block (finish brushing).
+        return Math.max((int)(LibrushConfig.getDefaultBrushSweepsToFinish() + AttributeUtils.getValueOrDefault(player, LibrushAttributes.BRUSH_SWEEPS_TO_FINISH)), 1);
     }
 }

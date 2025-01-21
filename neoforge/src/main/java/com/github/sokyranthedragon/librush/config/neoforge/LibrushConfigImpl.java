@@ -6,4 +6,9 @@ public class LibrushConfigImpl
     {
         return LibrushServerConfig.CONFIG.baseBrushSpeed.get();
     }
+
+    public static int getDefaultBrushSweepsToFinish()
+    {
+        return LibrushServerConfig.CONFIG.baseBrushSweepsToFinish.get();
+    }
 }

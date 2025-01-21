@@ -8,4 +8,9 @@ public class LibrushConfigImpl
     {
         return BrushItem.ANIMATION_DURATION;
     }
+
+    public static int getDefaultBrushSweepsToFinish()
+    {
+        return 10;
+    }
 }

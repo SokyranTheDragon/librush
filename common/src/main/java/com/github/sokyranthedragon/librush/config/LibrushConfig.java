@@ -9,4 +9,10 @@ public class LibrushConfig
     {
         throw new AssertionError("This method should have been replaced by Architectury.");
     }
+
+    @ExpectPlatform
+    public static int getDefaultBrushSweepsToFinish()
+    {
+        throw new AssertionError("This method should have been replaced by Architectury.");
+    }
 }

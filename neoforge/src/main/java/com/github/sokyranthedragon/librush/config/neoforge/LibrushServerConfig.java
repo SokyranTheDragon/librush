@@ -15,6 +15,7 @@ public class LibrushServerConfig implements IConfigSpec
     public static final ModConfigSpec CONFIG_SPEC;
 
     public final ModConfigSpec.ConfigValue<Integer> baseBrushSpeed;
+    public final ModConfigSpec.ConfigValue<Integer> baseBrushSweepsToFinish;
 
     private LibrushServerConfig(ModConfigSpec.Builder builder)
     {
@@ -22,6 +23,10 @@ public class LibrushServerConfig implements IConfigSpec
             .translation(LibrushConfigConstants.BASE_BRUSH_SWEEP_DURATION_KEY)
             .comment(LibrushConfigConstants.BASE_BRUSH_SWEEP_DURATION_TOOLTIP, "The default (vanilla) duration is 10 ticks.")
             .defineInRange(LibrushConfigConstants.BASE_BRUSH_SWEEP_DURATION_ID, () -> BrushItem.ANIMATION_DURATION, 1, 1000);
+
+        baseBrushSweepsToFinish = builder
+            .translation(LibrushConfigConstants.BASE_BRUSH_SWEEPS_TO_FINISH_KEY)
+            .defineInRange(LibrushConfigConstants.BASE_BRUSH_SWEEPS_TO_FINISH_ID, 10, 1, 1000);
     }
 
     static
