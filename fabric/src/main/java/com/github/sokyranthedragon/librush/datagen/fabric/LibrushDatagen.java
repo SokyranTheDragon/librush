@@ -8,7 +8,7 @@ public class LibrushDatagen implements DataGeneratorEntrypoint
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator generator)
     {
-        FabricDataGenerator.Pack pack = generator.createPack();
+        var pack = generator.createPack();
 
         pack.addProvider(LibrushLanguageGenerator::new);
     }

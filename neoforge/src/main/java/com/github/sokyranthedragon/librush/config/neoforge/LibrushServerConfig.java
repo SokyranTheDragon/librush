@@ -7,7 +7,6 @@ import net.minecraft.world.item.BrushItem;
 import net.neoforged.fml.config.IConfigSpec;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.ModConfigSpec;
-import org.apache.commons.lang3.tuple.Pair;
 import org.jetbrains.annotations.Nullable;
 
 public class LibrushServerConfig implements IConfigSpec
@@ -27,7 +26,7 @@ public class LibrushServerConfig implements IConfigSpec
 
     static
     {
-        Pair<LibrushServerConfig, ModConfigSpec> pair = new ModConfigSpec.Builder().configure(LibrushServerConfig::new);
+        var pair = new ModConfigSpec.Builder().configure(LibrushServerConfig::new);
 
         CONFIG = pair.getLeft();
         CONFIG_SPEC = pair.getRight();
