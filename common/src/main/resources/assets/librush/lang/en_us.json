@@ -1,5 +1,7 @@
 {
   "attribute.name.librush.brush_sweep_duration": "Brush sweep duration",
+  "attribute.name.librush.brush_sweeps_to_finish": "Brush sweeps to finish sweeping",
   "config.librush.base_brush_sweep_duration": "Base brush sweep duration",
-  "config.librush.base_brush_sweep_duration.tooltip": "Duration of a single brush sweep, in ticks."
+  "config.librush.base_brush_sweep_duration.tooltip": "Duration of a single brush sweep, in ticks.",
+  "config.librush.base_brush_sweeps_to_finish": "Base sweeps to finish sweeping"
 }
